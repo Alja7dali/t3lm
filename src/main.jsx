@@ -8,7 +8,7 @@ import { Home, SignIn, SignUp } from './routes'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      <Routes>
+      <Routes base="/">
         <Route path="/" element={<Home />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
