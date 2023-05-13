@@ -138,7 +138,7 @@ export const SignUp = () => {
                   value={f.value.get}
                   onChange={(e) => {f.value.set(e.target.value); f.error.set("")}}
                   placeholder={lang === "ltr" ? f.title.en : f.title.ar}
-                  className={`w-full rounded-md p-4 outline-none border-transparent border-2 focus:border-solid ${f.error.get.length > 0 ? "bg-red-50 focus:border-red-500" : "bg-blue-50 focus:border-blue-500"}`}
+                  className={`w-full rounded-md p-4 outline-none border-transparent border-2 focus:border-solid ${f.error.get.length > 0 ? "bg-red-50 focus:border-red-500" : "bg-blue-50 focus:border-[#363ED0]"}`}
                 />
                 <div className={f.error.get.length > 0 ? "text-red-700 block" : "hidden"}>
                 {f.error.get}
@@ -147,10 +147,10 @@ export const SignUp = () => {
             })}
           </div>
           <div className="flex flex-col space-y-2">
-            <button onClick={validate} className="p-1 px-3 text-white bg-blue-500 hover:bg-blue-600 border-2 border-blue-500 hover:border-blue-600 rounded-md">
+            <button onClick={validate} className="p-1 px-3 text-white bg-[#363ED0] hover:bg-blue-600 border-2 border-[#363ED0] hover:border-blue-600 rounded-md">
               {lang === "ltr" ? "Sign up" : "إنشاء حساب"}
             </button>
-            <Link to="/sign-in" className="p-1 px-3 text-blue-500 hover:text-blue-600 border-2 border-blue-500 hover:border-blue-600 rounded-lg text-center">
+            <Link to="/sign-in" className="p-1 px-3 text-[#363ED0] hover:text-blue-600 border-2 border-[#363ED0] hover:border-blue-600 rounded-lg text-center">
               {lang === "ltr" ? "Sign in" : "تسجيل الدخول"}
             </Link>
           </div>
